@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-4" *ngFor="let task of privateTasks">
+    <div class="card">
+      <div class="card-body">
+        <h3>{{ task.dni }}</h3>
+        <p>{{ task.nombres }}</p>
+        <p>{{ task.apellidos }}</p>
+        <p>{{ task.direccion }}</p>
+        <p>{{ task.telefono }}</p>
+      </div>
+      <div class="card-footer">
+        {{ task.email }}
+      </div>
+    </div>
+  </div>
+</div>

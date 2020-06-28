@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-4" *ngFor="let task of tasks">
+    <div class="card">
+      <div class="card-body">
+        <h3>{{ task.nombre }}</h3>
+        <p>{{ task.precio }}</p>
+        <p>{{ task.cantidad }}</p>
+        <p>{{ task.descripcion }}</p>
+      </div>
+      <div class="card-footer">
+        {{ task.fecha | date: "shortDate" }}
+      </div>
+    </div>
+  </div>
+</div>
